@@ -14,3 +14,4 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://maphoshirts.space/sitemap.xml
+Sitemap: https://maphoshirts.space/sitemap-index.xml
