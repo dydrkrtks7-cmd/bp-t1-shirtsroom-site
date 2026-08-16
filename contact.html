@@ -1,20 +1,638 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>셔츠룸 사이트 정보 문의 및 이용 가이드 센터</title>
- <meta name="description" content="셔츠룸 사이트 이용 시 발생하는 의문점과 정확한 정보 확인을 위한 가이드입니다. 서비스 이용 전 필수 숙지 사항과 운영 기준을 투명하게 안내합니다.">
- <meta name="keywords" content="셔츠룸, 셔츠룸 사이트, 이용 문의, 서비스 가이드, 방문 기준">
- <link rel="canonical" href="https://maphoshirts.space/contact.html">
- <meta property="og:title" content="셔츠룸 사이트 정보 문의 및 이용 가이드 센터">
- <meta property="og:description" content="셔츠룸 사이트 이용 시 발생하는 의문점과 정확한 정보 확인을 위한 가이드입니다. 서비스 이용 전 필수 숙지 사항과 운영 기준을 투명하게 안내합니다.">
- <meta property="og:url" content="https://maphoshirts.space/contact.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셔츠룸 사이트 정보 문의 및 이용 가이드 센터</title>
+  <meta name="description" content="셔츠룸 사이트 이용 시 발생하는 의문점과 정확한 정보 확인을 위한 가이드입니다. 서비스 이용 전 필수 숙지 사항과 운영 기준을 투명하게 안내합니다.">
+  <link rel="canonical" href="https://maphoshirts.space/contact.html">
+  <meta property="og:title" content="셔츠룸 사이트 정보 문의 및 이용 가이드 센터">
+  <meta property="og:description" content="셔츠룸 사이트 이용 시 발생하는 의문점과 정확한 정보 확인을 위한 가이드입니다. 서비스 이용 전 필수 숙지 사항과 운영 기준을 투명하게 안내합니다.">
+  <meta property="og:url" content="https://maphoshirts.space/contact.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+/* ===== CSS RESET (minimal brutal) ===== */
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+}
+
+body {
+ font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+ background-color: #111111;
+ color: #ffff00;
+ line-height: 1.3;
+ padding: 0;
+ max-width: none;
+ overflow-x: hidden;
+ -webkit-font-smoothing: antialiased;
+}
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+ --primary: #111111;
+ --secondary: #ffff00;
+ --accent: #00ff41;
+ --font-mono: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+ --border-w: 3px;
+ --gap: 48px;
+ --pad: 72px;
+ --section-gap: 120px;
+}
+
+/* ===== TYPOGRAPHY (raw & oversized) ===== */
+h1, h2, h3, h4, h5, h6 {
+ font-family: Impact, 'Haettenschweiler', 'Arial Black', 'Franklin Gothic Bold', sans-serif;
+ font-weight: 900;
+ letter-spacing: -0.03em;
+ text-transform: uppercase;
+ color: var(--secondary);
+}
+
+h1 {
+ font-size: clamp(3.5rem, 12vw, 7rem);
+ line-height: 0.85;
+ margin-bottom: var(--gap);
+ border-bottom: var(--border-w) solid var(--accent);
+ display: inline-block;
+ padding-bottom: 4px;
+ transform: rotate(-1deg);
+}
+
+h2 {
+ font-size: clamp(2.5rem, 8vw, 4.5rem);
+ line-height: 0.9;
+ margin-bottom: calc(var(--gap) * 0.75);
+ border-left: var(--border-w) solid var(--accent);
+ padding-left: 16px;
+ transform: skewX(-3deg);
+}
+
+h3 {
+ font-size: clamp(1.8rem, 5vw, 2.8rem);
+ line-height: 1;
+ margin-bottom: calc(var(--gap) * 0.5);
+}
+
+p, li, blockquote, figcaption {
+ font-family: var(--font-mono);
+ font-size: 1.1rem;
+ font-weight: 400;
+ color: #dddddd;
+ line-height: 1.4;
+}
+
+a {
+ color: var(--accent);
+ text-decoration: underline wavy 2px;
+ text-underline-offset: 6px;
+ transition: all 0.1s ease;
+}
+
+a:hover {
+ color: var(--secondary);
+ text-decoration-color: var(--secondary);
+}
+
+/* ===== LAYOUT (full bleed, asymmetric) ===== */
+header, nav, main, section, footer {
+ width: 100%;
+ padding-left: var(--pad);
+ padding-right: var(--pad);
+}
+
+header {
+ background: var(--primary);
+ border-bottom: var(--border-w) solid var(--secondary);
+ padding-top: 24px;
+ padding-bottom: 24px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+ z-index: 10;
+}
+
+header .logo {
+ font-size: 2rem;
+ font-weight: 900;
+ font-family: Impact, 'Haettenschweiler', 'Arial Black', sans-serif;
+ text-transform: uppercase;
+ color: var(--accent);
+ letter-spacing: -0.02em;
+ transform: rotate(-2deg);
+ text-decoration: none;
+ border: none;
+}
+
+header .logo:hover {
+ color: var(--secondary);
+}
+
+/* ===== NAVIGATION (desktop) ===== */
+nav ul {
+ list-style: none;
+ display: flex;
+ gap: 32px;
+ align-items: center;
+}
+
+nav ul li a {
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ color: var(--secondary);
+ text-decoration: none;
+ border: var(--border-w) solid transparent;
+ padding: 8px 12px;
+ transition: 0.08s linear;
+}
+
+nav ul li a:hover {
+ border-color: var(--accent);
+ background: var(--primary);
+ color: var(--accent);
+ transform: scale(0.95);
+}
+
+/* hamburger button (hidden by default) */
+#hamburger-check {
+ display: none;
+}
+
+.hamburger-label {
+ display: none;
+ cursor: pointer;
+ font-size: 2.5rem;
+ color: var(--secondary);
+ line-height: 1;
+ border: var(--border-w) solid var(--secondary);
+ padding: 4px 12px;
+ transform: rotate(1deg);
+}
+
+.hamburger-label span {
+ font-family: var(--font-mono);
+ font-weight: 700;
+}
+
+/* ===== HERO ===== */
+.hero {
+ background: var(--primary);
+ padding-top: 120px;
+ padding-bottom: 120px;
+ position: relative;
+ margin-bottom: var(--section-gap);
+ border-bottom: var(--border-w) solid var(--accent);
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: var(--gap);
+ align-items: center;
+ overflow: hidden;
+}
+
+.hero::before {
+ content: '';
+ position: absolute;
+ top: -40px;
+ right: -80px;
+ width: 400px;
+ height: 400px;
+ background: repeating-linear-gradient(
+ 45deg,
+ var(--secondary) 0px,
+ var(--secondary) 8px,
+ var(--primary) 8px,
+ var(--primary) 16px
+ );
+ opacity: 0.15;
+ transform: rotate(12deg);
+ z-index: 0;
+ pointer-events: none;
+}
+
+.hero-text {
+ position: relative;
+ z-index: 2;
+}
+
+.hero-text h1 {
+ margin-bottom: 16px;
+ transform: rotate(-2deg) skewX(-4deg);
+}
+
+.hero-text p {
+ font-size: 1.4rem;
+ color: #cccccc;
+ border-left: var(--border-w) solid var(--accent);
+ padding-left: 24px;
+ margin-bottom: var(--gap);
+ max-width: 600px;
+}
+
+.hero-cta {
+ display: inline-block;
+ background: var(--secondary);
+ color: var(--primary);
+ font-family: Impact, 'Haettenschweiler', 'Arial Black', sans-serif;
+ font-size: 2rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 16px 40px;
+ border: var(--border-w) solid var(--accent);
+ transform: rotate(-1deg) skewX(-3deg);
+ transition: 0.08s linear;
+ letter-spacing: 0.04em;
+}
+
+.hero-cta:hover {
+ background: var(--accent);
+ color: var(--primary);
+ border-color: var(--secondary);
+ transform: rotate(1deg) scale(1.02);
+}
+
+.hero-visual {
+ position: relative;
+ z-index: 2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 300px;
+ background: var(--primary);
+ border: var(--border-w) solid var(--secondary);
+ padding: 32px;
+ transform: rotate(2deg);
+ overflow: hidden;
+}
+
+.hero-visual svg {
+ width: 100%;
+ height: auto;
+ max-width: 320px;
+ filter: drop-shadow(8px 8px 0 rgba(0,255,65,0.3));
+}
+
+/* ===== SECTION (general) ===== */
+section {
+ padding-top: 0;
+ padding-bottom: 0;
+ margin-bottom: var(--section-gap);
+}
+
+.section-title {
+ display: flex;
+ align-items: baseline;
+ gap: 16px;
+ margin-bottom: var(--gap);
+ border-bottom: var(--border-w) solid var(--accent);
+ padding-bottom: 8px;
+}
+
+.section-title h2 {
+ margin-bottom: 0;
+ border-left: none;
+ padding-left: 0;
+ transform: none;
+}
+
+.section-title span {
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ color: var(--accent);
+ text-transform: uppercase;
+}
+
+/* ===== VALUE PROPOSITION (asymmetric grid) ===== */
+.values-grid {
+ display: grid;
+ grid-template-columns: 2fr 1fr 1.5fr;
+ gap: var(--gap);
+ margin-top: calc(var(--gap) * 0.5);
+}
+
+.value-card {
+ border: var(--border-w) solid var(--secondary);
+ padding: 32px 24px;
+ background: var(--primary);
+ transform: rotate(var(--rot, 0deg));
+ transition: 0.1s ease;
+}
+
+.value-card:nth-child(1) { --rot: -1deg; }
+.value-card:nth-child(2) { --rot: 1.5deg; }
+.value-card:nth-child(3) { --rot: -0.5deg; }
+
+.value-card:hover {
+ border-color: var(--accent);
+ transform: rotate(0deg) scale(1.02);
+}
+
+.value-card h3 {
+ font-size: 2.2rem;
+ margin-bottom: 12px;
+ border-bottom: 3px solid var(--accent);
+ padding-bottom: 4px;
+ display: inline-block;
+}
+
+.value-card p {
+ font-size: 1rem;
+ color: #bbbbbb;
+}
+
+/* ===== REVIEWS (UGC) ===== */
+.reviews-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap);
+ margin-top: var(--gap);
+}
+
+.review-card {
+ border: var(--border-w) solid var(--secondary);
+ padding: 32px 24px;
+ background: var(--primary);
+ position: relative;
+ transform: rotate(calc(var(--r, 0) * 1deg));
+}
+
+.review-card:nth-child(1) { --r: -1; }
+.review-card:nth-child(2) { --r: 2; }
+.review-card:nth-child(3) { --r: -2; }
+.review-card:nth-child(4) { --r: 1; }
+.review-card:nth-child(5) { --r: -0.5; }
+
+.review-card::before {
+ content: '❝';
+ font-size: 4rem;
+ color: var(--accent);
+ position: absolute;
+ top: -10px;
+ left: 10px;
+ opacity: 0.3;
+ font-family: serif;
+}
+
+.review-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 16px;
+ border-bottom: 2px solid var(--secondary);
+ padding-bottom: 8px;
+}
+
+.review-nick {
+ font-family: Impact, 'Haettenschweiler', 'Arial Black', sans-serif;
+ font-size: 1.5rem;
+ color: var(--secondary);
+ text-transform: uppercase;
+}
+
+.review-date {
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+ color: #888888;
+}
+
+.stars {
+ color: var(--accent);
+ font-size: 1.4rem;
+ letter-spacing: 2px;
+}
+
+.review-text {
+ font-size: 1rem;
+ color: #cccccc;
+ margin-top: 8px;
+ font-style: italic;
+}
+
+/* ===== CONTACT / CTA ===== */
+.contact-block {
+ background: var(--primary);
+ border: var(--border-w) solid var(--accent);
+ padding: 64px var(--pad);
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: var(--gap);
+ transform: skewX(-1deg);
+ margin-top: var(--gap);
+}
+
+.contact-block h2 {
+ margin-bottom: 0;
+ border-left: none;
+ padding-left: 0;
+ transform: none;
+ flex: 1 1 300px;
+}
+
+.contact-block a.tel-link {
+ font-family: Impact, 'Haettenschweiler', 'Arial Black', sans-serif;
+ font-size: 3rem;
+ font-weight: 900;
+ color: var(--secondary);
+ text-decoration: none;
+ border: var(--border-w) solid var(--secondary);
+ padding: 16px 40px;
+ background: var(--primary);
+ transition: 0.08s linear;
+ display: inline-block;
+ transform: rotate(1deg);
+}
+
+.contact-block a.tel-link:hover {
+ background: var(--accent);
+ color: var(--primary);
+ border-color: var(--accent);
+ transform: rotate(-1deg) scale(1.03);
+}
+
+/* ===== FOOTER ===== */
+footer {
+ background: var(--primary);
+ border-top: var(--border-w) solid var(--secondary);
+ padding-top: 48px;
+ padding-bottom: 48px;
+ margin-top: 0;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 24px;
+}
+
+footer p {
+ font-size: 0.9rem;
+ color: #777777;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+}
+
+footer a {
+ color: var(--accent);
+ text-decoration: underline dotted 2px;
+}
+
+footer a:hover {
+ color: var(--secondary);
+}
+
+/* ===== RESPONSIVE (tablet & mobile) ===== */
+@media screen and (max-width: 768px) {
+ :root {
+ --pad: 24px;
+ --gap: 24px;
+ --section-gap: 80px;
+ }
+
+ body {
+ font-size: 14px;
+ }
+
+ h1 {
+ font-size: 2.8rem;
+ transform: rotate(-1deg);
+ }
+
+ h2 {
+ font-size: 2rem;
+ transform: skewX(-2deg);
+ }
+
+ .hero {
+ grid-template-columns: 1fr;
+ padding-top: 72px;
+ padding-bottom: 72px;
+ }
+
+ .hero-text p {
+ font-size: 1.1rem;
+ }
+
+ .hero-visual {
+ min-height: 200px;
+ transform: rotate(0deg);
+ }
+
+ .hero-visual svg {
+ max-width: 200px;
+ }
+
+ /* hamburger visible */
+ .hamburger-label {
+ display: inline-block;
+ }
+
+ nav ul {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ background: var(--primary);
+ border: var(--border-w) solid var(--secondary);
+ padding: 24px;
+ gap: 16px;
+ margin-top: 16px;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 20;
+ }
+
+ #hamburger-check:checked + .hamburger-label + nav ul {
+ display: flex;
+ }
+
+ nav ul li a {
+ font-size: 1.4rem;
+ display: block;
+ text-align: center;
+ border: 2px solid var(--secondary);
+ padding: 12px;
+ }
+
+ .values-grid {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+
+ .value-card {
+ transform: rotate(0deg) !important;
+ }
+
+ .reviews-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .review-card {
+ transform: rotate(0deg) !important;
+ }
+
+ .contact-block {
+ flex-direction: column;
+ text-align: center;
+ padding: 40px 24px;
+ transform: none;
+ }
+
+ .contact-block a.tel-link {
+ font-size: 2.2rem;
+ padding: 12px 24px;
+ }
+
+ footer {
+ flex-direction: column;
+ text-align: center;
+ }
+}
+
+/* small extra tweaks */
+::selection {
+ background: var(--accent);
+ color: var(--primary);
+}
+
+br {
+ display: block;
+ content: '';
+ margin-top: 8px;
+}
+</style>
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
- <header class="m-head-sxz8">
+  <div class="container">
+    <header>
+ <a href="/" class="logo">셔츠룸◢</a>
+
+ <input type="checkbox" id="hamburger-check">
+ <label for="hamburger-check" class="hamburger-label"><span>☰</span></label>
+
+ <nav>
+ <ul>
+ <li><a href="#home">홈</a></li>
+ <li><a href="#value">가치</a></li>
+ <li><a href="#reviews">후기</a></li>
+ <li><a href="#contact">연락</a></li>
+ </ul>
+ <a href="posts.html">글 목록</a></nav>
+</header>
+    <main>
+<header class="m-head-sxz8">
  <nav>
  <a href="/">홈</a>
  <a href="/guide">이용 가이드</a>
@@ -59,5 +677,7 @@
  <p>본 사이트는 정보 제공만을 목적으로 하며, 실제 이용에 관한 모든 책임은 이용자 본인에게 있습니다. 상세 문의는 운영 중인 공식 채널을 이용해 주시기 바랍니다.</p>
  <p>&copy; 2024 셔츠룸 정보 제공 가이드 서비스. All rights reserved.</p>
  </footer>
+    </main>
+  </div>
 </body>
 </html>
